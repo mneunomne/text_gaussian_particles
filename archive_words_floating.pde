@@ -3,7 +3,8 @@ ArrayList<Word> words = new ArrayList<Word>();
 PFont font; 
 
 void setup () {
-  size(400, 400);
+  size(800, 800);
+  background(0);
   font = createFont("Arial Unicode MS", 96, true);
   words.add(new Word("非常事態宣言"));
   words.add(new Word("تضامن"));
@@ -13,10 +14,14 @@ void setup () {
 }
 
 void draw () {
-  background(0);
+  // background(0);
   for (int i = 0; i < words.size(); i++) {
     words.get(i).display();
   }
-  filter(BLUR, 1);
+  filter(BLUR, 2);
   // saveFrame("filename-####.jpg");
+}
+
+void keyPressed() {
+  saveFrame("print-####.tiff");
 }
