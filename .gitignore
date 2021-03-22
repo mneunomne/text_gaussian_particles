@@ -1,3 +1,4 @@
 *.jpg
+*.tiff
 out/
 .DS_Store
