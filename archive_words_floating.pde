@@ -18,5 +18,5 @@ void draw () {
     words.get(i).display();
   }
   filter(BLUR, 1);
-  saveFrame("filename-####.jpg");
+  // saveFrame("filename-####.jpg");
 }

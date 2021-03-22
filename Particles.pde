@@ -42,8 +42,8 @@ class Particles {
     for (int i = 0; i < particles.size(); i++) {
     stroke(random(255));
       PVector p = particles.get(i);
-      float x = p.x + randomGaussian() * scale;
-      float y = p.y + randomGaussian() * scale;
+      float x = p.x * randomGaussian() * scale/10;
+      float y = p.y * randomGaussian() * scale/10;
       point(x, y);
     }
     // image(pg, 0, 0);
